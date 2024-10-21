@@ -1,0 +1,21 @@
+.navbar {
+    background-color: white;
+  }
+  
+  .btn ul li {
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 5px;
+    list-style-type: none;
+  }
+  
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
