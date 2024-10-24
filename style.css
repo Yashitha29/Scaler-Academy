@@ -1,21 +1,1091 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  position: fixed;
+}
+
+.top-base-container {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background: linear-gradient(70deg, rgba(32, 8, 77, 0.968) 40%, rgba(64, 15, 87, 0.813) 67%);
+  z-index: 1000;
+  text-align: center;
+  padding: 6px 0;
+
+}
+
+.top-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.top-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: white;
+}
+
+.top-cta-btn {
+  margin-left: 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  padding: 8px 10px;
+
+
+}
+
+.top-cta-btn img {
+  margin-left: 5px;
+  width: 10px;
+  height: 10px;
+}
+
+
 .navbar {
+  background-color: white;
+  margin-bottom: 20%;
+  position: fixed;
+  z-index: 1;
+}
+
+.nav-link:hover {
+  color: blue;
+}
+
+.btn ul li {
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 5px;
+  list-style-type: none;
+
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+/* .home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 700PX;
+    color: white;
+    background-color: rgb(91,111,80);
+    background-image: none;
+
+    .home-head1{
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: start;
+      color:white;
+      .home-head1 h2{
+        width: bold;
+        font-size: 30px;
+      }
+      .home-but{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        .home-but form{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  } */
+.homeall {
+  background-color: whitesmoke;
+
+  .home {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 250px 40px; */
+    background-repeat: no-repeat;
+    padding: 200px 30px 100px 30px;
+    background-image: url("https://assets-v2.scaler.com/assets/academy/svg/banner-background-34136d3a9ddff172e6bae6e3d8283c452231dcda2196b055bfa2e34e222754b7.svg");
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    color: white;
+    padding: 0px 30px;
+    gap: 20px;
+    width: 60%;
+  }
+
+  .left h1 {
+    font-size: 2.5em;
+    margin-bottom: 10%;
+  }
+
+  .left p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+
+  .left .buttons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .left .buttons a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+  .left .buttons .book {
+    background-color: #ff3333;
+    color: white;
+    flex: 1;
+  }
+
+  .left .buttons .explore {
     background-color: white;
+    color: #003366;
+    border: 2px solid #003366;
+    flex: 1;
   }
-  
-  .btn ul li {
-    border-radius: 20px;
+
+  .left .note {
+    margin-top: 20px;
+    color: #ffcc00;
+  }
+
+  .buttons .btn {
+    padding: 10px 20px;
+    margin-right: 10px;
+  }
+
+  .note {
+    font-size: 0.9rem;
+    margin-top: 20px;
+    color: #ffecb3;
+  }
+
+  .booking-form {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    max-height: 500px;
+    overflow-y: auto;
+  }
+
+  .booking-form h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .booking-form input,
+  .booking-form select {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .booking-form button {
+    padding: 0.75rem;
+    font-size: 1rem;
+    background-color: #ff3d55;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .booking-form .form-check-label {
+    margin-left: 10px;
+  }
+
+  .booking-form .form-check-input {
+    margin-top: 10px;
+  }
+
+  .dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dot.active {
+    background-color: #dc3545;
+  }
+
+  .dot:hover {
+    background-color: #007bff;
+    cursor: pointer;
+  }
+
+  .terms-text {
+    font-size: 0.85rem;
+    color: #6c757d;
+    text-align: center;
+  }
+
+  .terms-text a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  .terms-text a:hover {
+    text-decoration: underline;
+  }
+
+  input[type="tel"] {
+    width: 70%;
+  }
+
+  .input-group-text img {
+    margin-right: 5px;
+  }
+
+  .input-group-text {
+    background-color: white;
+    border: 1px solid #ced4da;
+    padding: 5px 10px;
+  }
+
+  input[type="tel"]::placeholder,
+  input[type="text"]::placeholder,
+  input[type="email"]::placeholder {
+    color: #adb5bd;
+  }
+
+  .form-select,
+  .form-control {
+    height: 45px;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .form-select:focus,
+  .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+
+  .form-check-input {
+    margin-top: 0.3rem;
+  }
+
+  .form-check-label {
+    margin-left: 10px;
+    font-size: 16px;
+  }
+
+  #cards {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    border-radius: 5px;
+    margin: 0px 50px;
+    margin-top: -90px;
+    background-color: white;
+    box-shadow: 2px 2px 5px black;
+
+    #c1 {
+      font-size: 30px;
+
+      b {
+        font-weight: bold;
+      }
+    }
+
+    #c2 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      padding: 20px 40px;
+
+      .card {
+        text-align: center;
+        align-items: center;
+        padding: 40px;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+
+        img {
+          height: 50px;
+          width: 70px;
+        }
+
+        .card-body {
+          height: 100%;
+          width: 100%;
+
+          .card-text {
+            font-size: 20px;
+            color: white;
+          }
+
+          #line1 {
+            height: 30px;
+            width: 150px;
+            background-color: rgba(255, 166, 0, 0.76);
+            rotate: 45deg;
+            position: absolute;
+            top: 0px;
+            right: -35px;
+          }
+
+          #line2 {
+            height: 30px;
+            width: 150px;
+            background-color: violet;
+            rotate: 45deg;
+            position: absolute;
+            top: 0px;
+            right: -35px;
+          }
+
+          #line3 {
+            height: 30px;
+            width: 150px;
+            background-color: lightseagreen;
+            rotate: 45deg;
+            position: absolute;
+            top: 0px;
+            right: -35px;
+          }
+
+          #line4 {
+            height: 30px;
+            width: 150px;
+            background-color: yellow;
+            rotate: 45deg;
+            position: absolute;
+            top: 0px;
+            right: -35px;
+          }
+
+          #line5 {
+            height: 30px;
+            width: 150px;
+            background-color: skyblue;
+            rotate: 45deg;
+            position: absolute;
+            top: 0px;
+            right: -35px;
+          }
+
+          #line6 {
+            height: 30px;
+            width: 150px;
+            background-color: orange;
+            rotate: 45deg;
+            position: absolute;
+            top: 0px;
+            right: -35px;
+          }
+        }
+      }
+    }
+  }
+
+  #flexiblehead {
+    font-size: 25px;
+  }
+
+  #flexiblesub {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-    padding: 5px;
-    list-style-type: none;
+    gap: 20px;
+
+    #card1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 1px rgba(128, 128, 128, 0.736) solid;
+      border-radius: 10px;
+      gap: 30px;
+      padding: 20px 30px;
+      height: 290px;
+
+
+      img {
+        height: 90px;
+        width: 90px;
+      }
+
+      #img1 {
+        height: 70px;
+      }
+
+      #cardhead {
+        font-weight: bold;
+        font-size: 22px;
+      }
+
+      #cardsub {
+        font-size: 18px;
+        color: rgba(0, 0, 0, 0.668);
+        width: 300px;
+        text-align: center;
+      }
+    }
   }
-  
-  .btn {
+}
+
+#curriculum {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(135, 207, 235, 0.734);
+  width: 100%;
+  gap: 30px;
+  padding: 20px;
+
+  #curriculumhead {
+    font-size: 30px;
+
+    a {
+      font-weight: bold;
+    }
+
+    b {
+      border-bottom: 2px rgb(15, 169, 230) solid;
+    }
+  }
+
+  #currmix1 {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    gap: 30px;
+
+    #curr {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background: white;
+      padding: 20px 20px;
+      gap: 100px;
+
+      #curr1 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        #currhead {
+          font-size: 30px;
+        }
+      }
+
+      #radio {
+        height: 40px;
+        width: 40px;
+      }
+    }
+
+    #curr:hover {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background: white;
+      padding: 20px 20px;
+      gap: 100px;
+      background-color: rgba(135, 207, 235, 0.734);
+
+      #curr1 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        #currhead {
+          font-size: 30px;
+        }
+      }
+
+      #radio {
+        height: 40px;
+        width: 40px;
+      }
+    }
   }
-  
+
+
+
+  #currmix2 {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+
+    #currmix21 {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: start;
+      gap: 20px;
+
+      #currall1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        padding: 10px 20px;
+        gap: 20px;
+        border-radius: 10px;
+
+        #curr {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+
+          #curr1 {
+            font-size: 15px;
+          }
+
+          #curr2 {
+            font-size: 22px;
+          }
+        }
+
+        #mon {
+          font-size: 15px;
+        }
+      }
+
+      #currall1:hover {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background: rgb(22, 160, 214);
+        color: white;
+        padding: 10px 20px;
+        gap: 20px;
+        border-radius: 10px;
+
+        #curr {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+
+          #curr1 {
+            font-size: 15px;
+          }
+
+          #curr2 {
+            font-size: 22px;
+          }
+        }
+
+        #mon {
+          font-size: 15px;
+        }
+      }
+
+      #currall2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        padding: 10px 20px;
+        gap: 60px;
+        width: 91%;
+        border-radius: 10px;
+
+        #curr {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+
+          #curr1 {
+            font-size: 15px;
+          }
+
+          #curr2 {
+            font-size: 22px;
+          }
+        }
+
+        #mon {
+          font-size: 15px;
+        }
+      }
+
+      #currall2:hover {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: rgb(22, 160, 214);
+        padding: 10px 20px;
+        gap: 60px;
+        width: 91%;
+        border-radius: 10px;
+
+        #curr {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+
+          #curr1 {
+            font-size: 15px;
+          }
+
+          #curr2 {
+            font-size: 22px;
+          }
+        }
+
+        #mon {
+          font-size: 15px;
+        }
+      }
+
+      #currall3 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        padding: 10px 20px;
+        gap: 270px;
+        width: 91%;
+        border-radius: 10px;
+
+        #curr {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+
+          #curr1 {
+            font-size: 15px;
+          }
+
+          #curr2 {
+            font-size: 22px;
+          }
+        }
+
+        #mon {
+          font-size: 15px;
+        }
+      }
+
+      #currall3:hover {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: rgb(22, 160, 214);
+        padding: 10px 20px;
+        gap: 270px;
+        width: 91%;
+        border-radius: 10px;
+
+        #curr {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+
+          #curr1 {
+            font-size: 15px;
+          }
+
+          #curr2 {
+            font-size: 22px;
+          }
+        }
+
+        #mon {
+          font-size: 15px;
+        }
+      }
+
+      #currall4 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        padding: 10px 20px;
+        gap: 60px;
+        width: 91%;
+        border-radius: 10px;
+
+        #curr {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+
+          #curr1 {
+            font-size: 15px;
+          }
+
+          #curr2 {
+            font-size: 22px;
+          }
+        }
+
+        #mon {
+          font-size: 15px;
+        }
+      }
+
+      #currall4:hover {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: rgb(22, 160, 214);
+        padding: 10px 20px;
+        gap: 60px;
+        width: 91%;
+        border-radius: 10px;
+
+        #curr {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+
+          #curr1 {
+            font-size: 15px;
+          }
+
+          #curr2 {
+            font-size: 22px;
+          }
+        }
+
+        #mon {
+          font-size: 15px;
+        }
+      }
+
+      #currall5 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        padding: 10px 20px;
+        gap: 130px;
+        width: 91%;
+        border-radius: 10px;
+
+        #curr {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+
+          #curr1 {
+            font-size: 15px;
+          }
+
+          #curr2 {
+            font-size: 22px;
+          }
+        }
+
+        #mon {
+          font-size: 15px;
+        }
+      }
+
+      #currall5:hover {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: rgb(22, 160, 214);
+        padding: 10px 20px;
+        gap: 130px;
+        width: 91%;
+        border-radius: 10px;
+
+        #curr {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+
+          #curr1 {
+            font-size: 15px;
+          }
+
+          #curr2 {
+            font-size: 22px;
+          }
+        }
+
+        #mon {
+          font-size: 15px;
+        }
+      }
+
+      #currall6 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        padding: 10px 20px;
+        gap: 260px;
+        width: 91%;
+        border-radius: 10px;
+
+        #curr {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+
+          #curr1 {
+            font-size: 15px;
+          }
+
+          #curr2 {
+            font-size: 22px;
+          }
+        }
+
+        #mon {
+          font-size: 15px;
+        }
+      }
+
+      #currall6:hover {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: rgb(22, 160, 214);
+        padding: 10px 20px;
+        gap: 260px;
+        width: 91%;
+        border-radius: 10px;
+
+        #curr {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+
+          #curr1 {
+            font-size: 15px;
+          }
+
+          #curr2 {
+            font-size: 22px;
+          }
+        }
+
+        #mon {
+          font-size: 15px;
+        }
+      }
+    }
+
+    #currmix3 {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+
+      #currmix31 {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(22, 160, 214);
+        padding: 20px 50px;
+        gap: 10px;
+
+        #curr3head {
+          color: white;
+          font-size: 20px;
+          border-bottom: 2px white solid;
+        }
+
+        #curr3sub {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          a {
+            font-size: 20px;
+            color: white;
+            gap: 10px;
+          }
+
+          i {
+            color: white;
+            font-size: 8px;
+          }
+        }
+
+        #curr3sub1 {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          a {
+            font-size: 20px;
+            color: white;
+            gap: 10px;
+          }
+
+          i {
+            color: white;
+            font-size: 8px;
+          }
+        }
+      }
+
+      button {
+        color: white;
+        background: rgb(250, 3, 69);
+        border: none;
+        padding: 10px 20px;
+        font-size: 15px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+#take {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* width: 100%; */
+  background: rgb(12, 32, 89);
+
+
+  #take1 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+
+    #takehead {
+      font-size: 30px;
+      font-weight: bold;
+      color: white;
+    }
+
+    #takesub {
+      color: white;
+    }
+
+    #takebody {
+      display: flex;
+      flex-direction: row;
+      font-size: 12px;
+
+      #takebody1 {
+        display: flex;
+        flex-direction: row;
+        color: white;
+        width: 185px;
+
+        i {
+          color: rgb(235, 184, 91);
+          font-size: 15px;
+        }
+      }
+    }
+
+    button {
+      color: white;
+      background: rgb(172, 18, 18);
+      cursor: pointer;
+      padding: 20px 40px;
+      border-radius: 10px;
+      border: none;
+      font-size: 20px;
+    }
+  }
+
+  img {
+    height: 300px;
+    width: 500px;
+  }
+}
+.alumni-card {
+  transition: transform 0.3s ease-in-out;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.alumni-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  text-align: center;
+}
+
+h5 {
+  margin-bottom: 0.5rem;
+}
+
+.card-img-top {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+hr {
+  width: 50%;
+  margin: 10px auto;
+}
